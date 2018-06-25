@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Puentes y Switches
+</title>
+    </head>
+    <body bgcolor="PAPAYAWHIP">
+	<h1>Cableado de las LAN: Puentes y Switches</h1>
+	<ul>Puentes</ul>
+       Los switches y los puentes operan en la capa de enlace de datos del modelo de referencia OSI. La función del puente es tomar decisiones inteligentes con respecto a pasar señales o no al segmento siguiente de la red.
+
+	<center>
+	<img src="img/img23.png">
+	</center>
+	<center>
+	<img src="img/img24.png">
+	</center>
+	Cuando un puente recibe una trama a través de la red, se busca la dirección MAC destino en la tabla de puenteo para determinar si hay que filtrar, inundar, o copiar la trama en otro segmento. El proceso de decisión tiene lugar de la siguiente forma:
+
+	<ul>• Si el dispositivo destino se encuentra en el mismo segmento que la trama, el puente impide que la trama vaya a otros segmentos. Este proceso se conoce como filtrado.
+	</ul>
+	<ul>• Si el dispositivo destino está en un segmento distinto, el puente envía la trama hasta el segmento apropiado.
+	</ul>
+	<ul>• Si el puente desconoce la dirección destino, el puente envía la trama a todos los segmentos excepto aquel en el cual se recibió. Este proceso se conoce como inundación.
+	</ul>
+	<ul>• Si se ubica de forma estratégica, un puente puede mejorar el rendimiento de la red de manera notoria.
+	</ul>
+	<ul>Switches</ul>
+	Los switches aprenden determinada información sobre los paquetes de datos que se reciben de los distintos computadores de la red. Los switches utilizan esa información para crear tablas de envío para determinar el destino de los datos que se están mandando de un computador a otro de la red.
+
+Un switch es un dispositivo más sofisticado que un puente. Un puente determina si se debe enviar una trama al otro segmento de red, basándose en la dirección MAC destino. Un switch tiene muchos puertos con muchos segmentos de red conectados a ellos. El switch elige el puerto al cual el dispositivo o estación de trabajo destino está conectado. Los switches mejoran el rendimiento de la red al mejorar la velocidad y el ancho de banda.
+
+	<center>
+	<img src="img/img25.png">
+	</center>
+
+
+	<center>
+	BÚSQUEDAS RELACIONADAS
+	<p>
+	<a href="imp UTP.html">Implementacion UTP</a>
+	</p>
+	<p>
+	<a href="repetidores y hubs.html">Repetidores y Hubs</a>
+	</p>
+	<p>
+	<a href="capa fisica LAN.html">Capa Física de las LAN</a>
+	</p>
+	</center>
+
+    </body>
+</html>

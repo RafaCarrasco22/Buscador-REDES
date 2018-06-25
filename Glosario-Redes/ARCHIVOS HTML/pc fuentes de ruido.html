@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Fuentes de ruido en medios de cobre
+</title>
+    </head>
+    <body bgcolor="PAPAYAWHIP">
+	<h1>Prueba del cable: Fuentes de ruido en medios de cobre</h1>
+        El ruido consiste en cualquier energía eléctrica en el cable de transmisión que dificulte que un receptor interprete los datos enviados por el transmisor. En la actualidad, la certificación TIA/EIA-568-B de un cable exige que se hagan pruebas de varios tipos de ruido.
+
+	<center>
+	<img src="img/img10.png">
+	</center>
+	La diafonía es la transmisión de señales de un hilo a otro circundante. Cuando cambia el voltaje en un hilo, se genera energía electromagnética. El hilo transmisor irradia esta energía como una señal de radio de un transmisor. Los hilos adyacentes del cable funcionan como antenas que reciben la energía transmitida, lo que interfiere con los datos transmitidos en esos hilos. Las señales de cables diferentes pero circundantes también pueden causar diafonía. Cuando la diafonía es provocada por una señal de otro cable, se conoce como  acoplamiento de diafonía. La diafonía es más destructiva a frecuencias de transmisión elevadas.
+
+Los instrumentos de prueba de cables miden la diafonía aplicando una señal de prueba a un par de hilos. El analizador de cables mide la amplitud de las señales diafónicas no deseadas inducidas sobre los otros
+pares de hilos del cable.
+Los cables de par trenzado están diseñados para aprovechar los efectos de la diafonía para minimizar el  ruido. En los cables de par trenzado, se utiliza un par de hilos para transmitir una señal. El par de hilos está trenzado de tal modo que cada hilo experimenta una diafonía similar. Como una señal de ruido en un hilo aparecerá en forma idéntica en el otro hilo, es fácil detectar este ruido y filtrarlo en el receptor.
+
+Trenzar un par de hilos en un cable, contribuye además a reducir la diafonía en las señales de datos o de ruido provenientes de un par de hilos adyacentes. En las categorías de UTP más altas, hacen falta más trenzas en cada par de hilos del cable para minimizar la diafonía a frecuencias de transmisión elevadas. Al colocar conectores en los extremos de los cables UTP, se debe minimizar el destrenzado de los pares de hilos para asegurar una comunicación confiable en la LAN.
+El estándar TIA/EIA-568-B especifica diez pruebas que un cable de cobre debe pasar si ha de ser usado en una LAN Ethernet moderna de alta velocidad. Se deben probar todos los enlaces de cables a su calificación más alta aplicable a la categoría de cable que se está instalando. Los diez parámetros de prueba principales que se deben verificar para que un enlace de cable cumpla con los estándares TIA/EIA son:
+	<ul>
+	Mapa de cableado
+
+	</ul>
+	<ul>
+	Pérdida de inserción
+
+	</ul>
+	<ul>
+	Paradiafonía (NEXT)
+	</ul>
+	El estándar de Ethernet especifica que cada pin de un conector RJ-45 debe tener una función particular. Una NIC (tarjeta de interfaz de red) transmite señales en los pins 1 y 2, y recibe señales en los pins 3 y 6. Los hilos de los cables UTP deben estar conectados a los correspondientes pins en cada extremo del cable.
+
+El mapa de cableado asegura que no existan circuitos abiertos o cortocircuitos en el cable. Un circuito abierto ocurre cuando un hilo no está correctamente unido al conector. Un cortocircuito ocurre cuando dos hilos están conectados entre sí.
+	<center>
+	<img src="img/img11.png">
+	</center>
+	<center>
+	<img src="img/img12.png">
+	</center>
+	Una falla de cableado de par dividido ocurre cuando un hilo de un par se cruza con un hilo de un par diferente. Esta mezcla entorpece el proceso de cancelación cruzada y hace el cable más susceptible a la diafonía y la interferencia.
+	<center>
+	<img src="img/img13.png">
+	</center>
+	<ul>
+	El retardo de propagación es una medición simple del tiempo que tarda una señal en recorrer el cable que se está probando. El retardo en un par de hilos depende de su longitud, trenzado y propiedades eléctricas. Los retardos se miden con una precisión de centésimas de nanosegundos. Un nanosegundo es una mil millonésima parte de un segundo, o 0.000000001 segundo. El estándar TIA/EIA-568.B establece un límite para el retardo de propagación para las diversas categorías de UTP.
+
+	</ul>
+	<ul>
+	
+Las mediciones de retardo de propagación son la base para las mediciones de longitud de cable. El TIA/EIA-568-B.1 especifica que la longitud física del enlace se calcula usando el par de hilos con el menor retardo eléctrico. Los analizadores de cables miden la longitud del hilo en base al retardo eléctrico según la medición de una prueba de Reflectometría en el dominio del tiempo (TDR), y no por la longitud física del revestimiento del cable. Ya que los hilos adentro del cable están trenzados, las señales en realidad recorren una distancia mayor que la longitud del cable. Cuando un analizador de cables realiza una medición TDR, envía una señal de pulso por un par de hilos y mide el tiempo requerido para que el pulso regrese por el mismo par de hilos.
+
+	</ul>
+	<ul>
+	La prueba TDR se utiliza no sólo para determinar la longitud, sino también para identificar la distancia hasta las fallas de cableado, tales como cortocircuitos y circuitos abiertos. Cuando el pulso encuentra un circuito abierto, un cortocircuito o una conexión deficiente, la totalidad o una parte de la energía del pulso se vuelve a reflejar al analizador de cables. Esto puede ser usado para calcular la distancia aproximada a la falla. La distancia aproximada es útil a la hora de localizar un punto de conexión defectuoso en el recorrido de un cable, como un jack de pared.
+	</ul>
+	<ul>
+	Los retardos de propagación de los distintos pares de hilos en un solo cable pueden presentar leves diferencias debido a diferencias en la cantidad de trenzas y propiedades eléctricas de cada par de cables. La diferencia de retardos entre pares se denomina sesgo de retardo. El sesgo de retardo es un parámetro crítico en redes de alta velocidad en las que los datos se transmiten simultáneamente a través de múltiples pares de hilos, tales como Ethernet 1000BASE-T. Si el sesgo de retardo entre los pares es demasiado grande, los bits llegan en momentos diferentes y los datos no se vuelven a ensamblar correctamente.
+
+	</ul>
+	<ul>
+	Todos los enlaces de cable en una LAN deben pasar todas las pruebas antes mencionadas, según lo especificado por el estándar TIA/EIA-568.B para ser considerados dentro de los estándares. Se debe usar un instrumento de certificación para asegurar que se pasan todas las pruebas para ser considerado dentro de los estándares. Estas pruebas garantizan que los enlaces de cable funcionarán de manera confiable a velocidades y frecuencias altas. Las pruebas de cables se deben realizar en el momento de instalar el cable, y a partir de ahí de forma periódica para garantizar que el cableado de la LAN cumpla con los estándares industriales.
+	</ul>
+	<center>
+	<img src="img/img14.png">
+	</center>
+    </body>
+	<center>
+	BÚSQUEDAS RELACIONADAS
+	<p>
+	<a href="prueba del cable exp y log.html">Exponentes y Logaritmos</a>
+	</p>
+	<p>
+	<a href="prueba del cable db.html">Decibelios</a>
+	</p>
+	<p>
+	<a href="pc visualizacion.html">Visualización de señales en tiempo y frecuencia</a>
+	</p>
+	</center>
+	
+</html>
